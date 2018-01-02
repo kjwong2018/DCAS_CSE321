@@ -5,7 +5,7 @@ Generate a char map[40][40] with 'A' on the top left as airport and all '*' then
 
 <h3>updateMap():</h3>
 Form feed then print out a 40x40 world using from char map[40][40].
-(**updateMap update output on screen every 1.3 sec**)
+:exclamation:updateMap update output on screen every 1.3 sec
 
 <h3>check():</h3>
 The function has input of (int x, int y) where x and y is the coordinate that a drone wants to move. It checks for character '>','<','^','v' and '\0' where null is to prevent the drones from flying off the map and it returns a boolean.
@@ -24,7 +24,7 @@ This is the main function where the magic happens. It first call initialization(
 <h2>EXECUTING THE PROGRAM:</h2>
 
 To run the simulation:
--Type in "make clean" to clean everything that was created before. The make file uses rm -rf dcas output.txt to clean remove dcas and output.txt
--Type in "make" to compile and create an executable call dcas for you to run. The make file uses g++ -std=c++11 -O2 -Wall DCAS.cpp -o dcas -lpthread to compile.
--Type in "./dcas" to run the simulation and the coordinates of the drones will be in the output.txt with ASCII World display in prompt.
--To kill the program at any time, you can just do CTRL + C. The simulation will automatically stop running when all drones did a full cycle.
+ * Type in "make clean" to clean everything that was created before. The make file uses rm -rf dcas output.txt to clean remove dcas and output.txt
+ * Type in "make" to compile and create an executable call dcas for you to run. The make file uses g++ -std=c++11 -O2 -Wall DCAS.cpp -o dcas -lpthread to compile.
+ * Type in "./dcas" to run the simulation and the coordinates of the drones will be in the output.txt with ASCII World display in prompt.
+ * To kill the program at any time, you can just do CTRL + C. The simulation will automatically stop running when all drones did a full cycle.
