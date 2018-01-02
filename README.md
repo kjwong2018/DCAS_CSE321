@@ -1,4 +1,5 @@
 <h2>NOTE</h2>
+
 **I wrote this simple program very quickly therefore it is not clean and might be hard to read especially the threading function. Let me know if you want a cleaner version and I will break the functionality in the thread into multiple parts such as move left, right, down right and return to base. Currently its a bunch of logic statements to determine where the planes should navigate to avoid colision, drop the package and return to base.**
 
 <h2> FUNCTIONS IN THE PROGRAM: </h2>
