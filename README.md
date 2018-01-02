@@ -6,7 +6,7 @@ Generate a char map[40][40] with 'A' on the top left as airport and all '*' then
 <h3>updateMap():</h3>
 Form feed then print out a 40x40 world using from char map[40][40].  
 
-**updateMap update output on screen every 1.3 sec**
+**(updateMap update output on screen every 1.3 sec)**
 
 <h3>check():</h3>
 The function has input of (int x, int y) where x and y is the coordinate that a drone wants to move. It checks for character '>','<','^','v' and '\0' where null is to prevent the drones from flying off the map and it returns a boolean.
@@ -17,7 +17,7 @@ The function is void and it takes in (int x, int y, char d) where x and y is the
 <h3>threading():</h3>
 This is the thread function in pthread_create. Its a complex function with a bunch of if else statement that handles avoid collision, drone movement from airport to destination and back. Each thread uses its id to find the path to destination and update the length of the path every move. It checks if a drone is in its next path and base on the boolean return by check, changes its course so that it doesn't collide with other drones.After the drone arrive at its location, it sets its new location as the airport and start moving to the airport.
 
-**Thread uses 2 while loop to move x axis first then y axis second if possible. It also wait for 1 sec after every move and ofstream its position into a output.txt file.**
+**(Thread uses 2 while loop to move x axis first then y axis second if possible. It also wait for 1 sec after every move and ofstream its position into a output.txt file.)**
 
 <h3>main():</h3>
 This is the main function where the magic happens. It first call initialization() then create a thread for updateMap() then create 10 drones thread, wait for 10 drones thread to finish then stop printing and let updateMap's thread exit then free everything before closing the program.
